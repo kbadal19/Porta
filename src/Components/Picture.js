@@ -95,7 +95,7 @@ export default function Picture() {
     "Full-stack Developer",
     "UI Designer",
     "Software Engineer",
-    "Front-end Architect",
+    "System Architect",
   ];
 
   return (

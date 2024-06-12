@@ -1,12 +1,10 @@
-import './App.css';
-import MainPage from './Components/MainPage';
+import "./App.css";
+import AppRouter from "./Utilities/AppRouter";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-        <MainPage/>
+      <AppRouter />
     </div>
   );
 }
-
-export default App;

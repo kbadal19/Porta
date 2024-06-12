@@ -54,7 +54,7 @@ export default function Navbar() {
             <li>
               <Tooltip title="Academics">
                 <a
-                  href="#"
+                  href="/academic"
                   className="flex items-center justify-center text-gray-900 rounded md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700"
                 >
                   <svg
@@ -72,8 +72,8 @@ export default function Navbar() {
             </li>
             <li>
               <Tooltip title="Resume">
-                <button
-                  onClick={handleDropdownToggle}
+                <a
+                  href="/resume"
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 >
                   <svg
@@ -85,13 +85,13 @@ export default function Navbar() {
                     <path d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625Z" />
                     <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
                   </svg>
-                </button>
+                </a>
               </Tooltip>
             </li>
             <li>
               <Tooltip title="LinkedIn">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/badal-kumar-3b1173277/"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <svg
@@ -110,7 +110,7 @@ export default function Navbar() {
             <li>
               <Tooltip title="Github">
                 <a
-                  href="#"
+                  href="https://github.com/kbadal19/"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <svg
