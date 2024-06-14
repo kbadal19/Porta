@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import Tooltip from "@mui/material/Tooltip";
 
 export default function Navbar() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const handleDropdownToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
