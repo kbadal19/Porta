@@ -2,6 +2,8 @@ import React from "react";
 import TopNavbar from "../Components/TopNavbar";
 import Picture from "../Components/Picture";
 import { InfiniteMovingCards } from "../Components/CertificateCards";
+import AcademicProjects from "../Components/AcademicProjects";
+import Skills from "../Components/Skills";
 
 const items = [
   {
@@ -22,6 +24,8 @@ export default function MainPage() {
     <div>
       <TopNavbar />
       <Picture />
+      <Skills />
+      <AcademicProjects />
       <InfiniteMovingCards items={items}/>
     </div>
   );
