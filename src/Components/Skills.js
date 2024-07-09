@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Tooltip } from "react-tooltip";
 import {
   JavaIcon,
   PythonIcon,
@@ -6,16 +7,28 @@ import {
   NextIcon,
   NodeIcon,
   DjangoIcon,
+  jsIcon,
+  postgresIcon,
+  springIcon,
+  tsIcon,
+  angularIcon,
+  tailwindIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 
 const skills = [
-  { proficiency: 80, IconComponent: JavaIcon},
-  { proficiency: 90, IconComponent: PythonIcon},
-  { proficiency: 75, IconComponent: ReactIcon},
-  { proficiency: 70, IconComponent: NextIcon},
-  { proficiency: 85, IconComponent: NodeIcon},
-  { proficiency: 65, IconComponent: DjangoIcon},
+  { proficiency: 80, IconComponent: JavaIcon, name: "Java" },
+  { proficiency: 90, IconComponent: PythonIcon, name: "Python" },
+  { proficiency: 75, IconComponent: ReactIcon, name: "React" },
+  { proficiency: 70, IconComponent: NextIcon, name: "Next.js" },
+  { proficiency: 85, IconComponent: NodeIcon, name: "Node.js" },
+  { proficiency: 65, IconComponent: DjangoIcon, name: "Django" },
+  { proficiency: 80, IconComponent: jsIcon, name: "JavaScript" },
+  { proficiency: 85, IconComponent: postgresIcon, name: "PostgreSQL" },
+  { proficiency: 80, IconComponent: tsIcon, name: "TypeScript" },
+  { proficiency: 70, IconComponent: springIcon, name: "Spring" },
+  { proficiency: 60, IconComponent: angularIcon, name: "Angular" },
+  { proficiency: 90, IconComponent: tailwindIcon, name: "Tailwind CSS" },
 ];
 
 const radius = 50;
@@ -42,16 +55,19 @@ export default function Skills() {
       {skills.map((skill, index) => (
         <motion.div
           key={index}
-          className="relative flex justify-center items-center m-4 w-40 h-40 text-center"
-          initial={{ opacity: 0, scale: 1.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          whileHover={{ scale: 1.1 }}
+          className="relative flex justify-center items-center m-4 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 text-center"
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1.2 }}
+          whileHover={{ scale: 1.3 }}
+          data-tooltip-id={`tooltip-${index}`}
+          data-tooltip-content={`${skill.name}: ${skill.proficiency}%`}
         >
           <svg
-            className="absolute w-full h-full animate-pulse"
-            width="160"
-            height="160"
+            className="absolute w-full h-full"
+            width="100%"
+            height="100%"
+            viewBox="0 0 160 160"
+            preserveAspectRatio="xMidYMid meet"
           >
             <circle
               className="text-gray-300"
@@ -85,13 +101,12 @@ export default function Skills() {
             <motion.div
               initial={{ y: -10 }}
               animate={{ y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-6xl"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
             >
               <skill.IconComponent />
             </motion.div>
-            <h3 className="text-xl">{skill.name}</h3>
           </div>
+          <Tooltip id={`tooltip-${index}`} />
         </motion.div>
       ))}
     </div>

@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../Utilities/cn";
 import actualPic from "./actualPic.jpg";
-import ReactCardFlip from "react-card-flip";
 
 const FlipWords = ({ words, duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -51,10 +50,7 @@ const FlipWords = ({ words, duration = 3000, className }) => {
           scale: 2,
           position: "absolute",
         }}
-        className={cn(
-          "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2",
-          className
-        )}
+        className={cn("z-10 inline-block relative text-left px-2", className)}
         key={currentWord}
       >
         {currentWord.split(" ").map((word, wordIndex) => (
@@ -81,16 +77,6 @@ const FlipWords = ({ words, duration = 3000, className }) => {
 };
 
 export default function Picture() {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsFlipped((prev) => !prev);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const words = [
     "Full-stack Developer",
     "UI Designer",
@@ -99,28 +85,26 @@ export default function Picture() {
   ];
 
   return (
-    <div className="flex items-center justify-between p-4 rounded-lg">
-      <div className="text-black flex-grow h-72 flex flex-col justify-center mr-16 border-r-2 border-black">
-        <span className="font-extrabold text-7xl">Hi, I am Badal Kumar,</span>
-        <span className="font-bold text-2xl mt-8">
-          <FlipWords words={words} />
+    <div className="flex flex-col lg:flex-row items-center justify-between p-4 rounded-lg text-gray-200">
+      <div className="flex-grow h-72 flex flex-col justify-center lg:mr-16 border-r-2 border-black lg:border-none">
+        <span className="font-extrabold text-4xl sm:text-5xl lg:text-7xl">
+          Hi, I am Badal Kumar,
+        </span>
+        <span className="font-bold text-lg sm:text-xl lg:text-2xl mt-8">
+          <FlipWords words={words} className="text-gray-200" />
           <br />
-          <div className="font-light text 2xl mt-8">with a thirst for more knowledge...</div>
+          <div className="font-light text-lg sm:text-xl lg:text-2xl mt-8">
+            with a thirst for more knowledge...
+          </div>
         </span>
       </div>
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <div className="cursor-pointer w-72 h-72 flex items-center justify-center mr-36">
-          <img
-            className="rounded-full shadow-2xl w-full h-full"
-            src={actualPic}
-            alt="Profile"
-          />
-        </div>
-
-        <div className="cursor-pointer flex items-center justify-center w-72 h-72 bg-white rounded-full mr-36">
-          <span className="text-black">This is the back of the card.</span>
-        </div>
-      </ReactCardFlip>
+      <div className="cursor-pointer w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 flex items-center justify-center lg:mr-36 mt-8 lg:mt-0">
+        <img
+          className="rounded-full shadow-2xl w-full h-full"
+          src={actualPic}
+          alt="Profile"
+        />
+      </div>
     </div>
   );
 }
