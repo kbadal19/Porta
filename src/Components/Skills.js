@@ -78,7 +78,7 @@ export default function Skills() {
               cx="80"
               cy="80"
             />
-            <circle
+            <motion.circle
               ref={(el) => (circlesRef.current[index] = el)}
               className="text-green-500"
               strokeWidth="6"
@@ -89,11 +89,12 @@ export default function Skills() {
               r={radius}
               cx="80"
               cy="80"
+              initial={{ strokeDashoffset: getProgress(skill.proficiency) }}
+              whileHover={{ strokeDashoffset: getProgress(100) }}
               style={{
-                transition: "stroke-dashoffset 1.5s ease-out",
+                transition: "stroke-dashoffset 0.5s ease-out",
                 transform: "rotate(-90deg)",
                 transformOrigin: "50% 50%",
-                strokeDashoffset: circumference,
               }}
             />
           </svg>
