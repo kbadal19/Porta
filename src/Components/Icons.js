@@ -1,15 +1,13 @@
-import { SvgIcon } from "@mui/material";
 import React from "react";
 
-// Example for Java icon
 export function JavaIcon(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="70"
-      height="70"
+      width="50"
+      height="50"
       viewBox="0 0 48 48"
     >
       <path
@@ -52,8 +50,8 @@ export function PythonIcon(props) {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="70"
-      height="70"
+      width="50"
+      height="50"
       viewBox="0 0 48 48"
     >
       <path
@@ -74,8 +72,8 @@ export function ReactIcon(props) {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="70px"
-      height="70px"
+      width="50px"
+      height="50px"
       viewBox="0 0 100 100"
     >
       <circle cx="50" cy="50" r="7" fill="#39c1d7"></circle>
@@ -98,8 +96,8 @@ export function ReactIcon(props) {
 export function NextIcon(props) {
   return (
     <svg
-      width="70px"
-      height="70px"
+      width="50px"
+      height="50px"
       viewBox="0 0 256 256"
       x="0px"
       y="0px"
@@ -122,8 +120,8 @@ export function NodeIcon(props) {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="70"
-      height="70"
+      width="50px"
+      height="50px"
       viewBox="0 0 48 48"
     >
       <path
@@ -144,8 +142,8 @@ export function DjangoIcon(props) {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="70"
-      height="70"
+      width="50px"
+      height="50px"
       viewBox="0 0 24 24"
     >
       <path
@@ -159,8 +157,8 @@ export function DjangoIcon(props) {
 export function postgresIcon(props) {
   return (
     <svg
-      width="70"
-      height="70"
+      width="50px"
+      height="50px"
       viewBox="-4 0 264 264"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
@@ -185,8 +183,8 @@ export function postgresIcon(props) {
 export function jsIcon(props) {
   return (
     <svg
-      width="50"
-      height="50"
+      width="40px"
+      height="40px"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
@@ -203,8 +201,8 @@ export function tsIcon() {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 400 400"
-      width="55"
-      height="55"
+      width="40px"
+      height="40px"
     >
       <path fill="#007acc" class="st0" d="M0 200V0h400v400H0" />
       <path
@@ -221,8 +219,8 @@ export function springIcon() {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="80"
-      height="80"
+      width="50px"
+      height="50px"
       viewBox="0 0 48 48"
     >
       <path
@@ -240,8 +238,8 @@ export function springIcon() {
 export function angularIcon() {
   return (
     <svg
-      width="60"
-      height="60"
+      width="50px"
+      height="50px"
       viewBox="0 0 256 270"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
@@ -274,8 +272,8 @@ export function tailwindIcon() {
   return (
     <svg
       fill="#459ef2"
-      width="80"
-      height="80"
+      width="50px"
+      height="50px"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       stroke="#459ef2"
@@ -293,6 +291,69 @@ export function tailwindIcon() {
           d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"
         ></path>
       </g>
+    </svg>
+  );
+}
+
+export function gitIcon(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="50"
+      height="50"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="#F4511E"
+        d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"
+      ></path>
+    </svg>
+  );
+}
+
+export function gcpIcon(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="50"
+      height="50"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="#1976d2"
+        d="M38.193,18.359c-0.771-2.753-2.319-5.177-4.397-7.03l-4.598,4.598	c1.677,1.365,2.808,3.374,3.014,5.648v1.508c0.026,0,0.05-0.008,0.076-0.008c2.322,0,4.212,1.89,4.212,4.212S34.61,31.5,32.288,31.5	c-0.026,0-0.05-0.007-0.076-0.008V31.5h-6.666H24V38h8.212v-0.004c0.026,0,0.05,0.004,0.076,0.004C38.195,38,43,33.194,43,27.288	C43,23.563,41.086,20.279,38.193,18.359z"
+      ></path>
+      <path
+        fill="#ffe082"
+        d="M19.56,25.59l4.72-4.72c-0.004-0.005-0.008-0.009-0.011-0.013l-4.717,4.717	C19.554,25.579,19.557,25.584,19.56,25.59z"
+        opacity=".5"
+      ></path>
+      <path
+        fill="#90caf9"
+        d="M19.56,25.59l4.72-4.72c-0.004-0.005-0.008-0.009-0.011-0.013l-4.717,4.717	C19.554,25.579,19.557,25.584,19.56,25.59z"
+        opacity=".5"
+      ></path>
+      <path
+        fill="#ff3d00"
+        d="M24,7.576c-8.133,0-14.75,6.617-14.75,14.75c0,0.233,0.024,0.46,0.035,0.69h6.5	c-0.019-0.228-0.035-0.457-0.035-0.69c0-4.549,3.701-8.25,8.25-8.25c1.969,0,3.778,0.696,5.198,1.851l4.598-4.598	C31.188,9.003,27.761,7.576,24,7.576z"
+      ></path>
+      <path
+        fill="#90caf9"
+        d="M15.712,31.5L15.712,31.5c-0.001,0-0.001,0-0.002,0c-0.611,0-1.188-0.137-1.712-0.373	l-4.71,4.71C11.081,37.188,13.301,38,15.71,38c0.001,0,0.001,0,0.002,0v0H24v-6.5H15.712z"
+        opacity=".5"
+      ></path>
+      <path
+        fill="#4caf50"
+        d="M15.712,31.5L15.712,31.5c-0.001,0-0.001,0-0.002,0c-0.611,0-1.188-0.137-1.712-0.373l-4.71,4.71	C11.081,37.188,13.301,38,15.71,38c0.001,0,0.001,0,0.002,0v0H24v-6.5H15.712z"
+      ></path>
+      <path
+        fill="#ffc107"
+        d="M11.5,27.29c0-2.32,1.89-4.21,4.21-4.21c1.703,0,3.178,1.023,3.841,2.494l4.717-4.717	c-1.961-2.602-5.065-4.277-8.559-4.277C9.81,16.58,5,21.38,5,27.29c0,3.491,1.691,6.59,4.288,8.547l4.71-4.71	C12.53,30.469,11.5,28.999,11.5,27.29z"
+      ></path>
     </svg>
   );
 }

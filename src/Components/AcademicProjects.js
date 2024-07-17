@@ -9,10 +9,17 @@ import medapp3 from "../Pictures/medapp3.jpg";
 import todo1 from "../Pictures/todo1.png";
 import todo2 from "../Pictures/todo2.png";
 import todo3 from "../Pictures/todo3.png";
+import inf1 from "../Pictures/inf1.png";
+import inf2 from "../Pictures/inf2.png";
+import inf3 from "../Pictures/inf3.png";
+import inf4 from "../Pictures/inf4.png";
+import hms1 from "../Pictures/hms1.png";
+import hms2 from "../Pictures/hms2.png";
+import hms3 from "../Pictures/hms3.png";
 
 const projects = [
   {
-    title: "Project 1",
+    title: "Emowell - Depression Detection Chatbot",
     description:
       "Officia nostrud laboris proident cillum esse eiusmod consequat ullamco ex sit ut reprehenderit ipsum elit. Qui in exercitation officia irure velit qui ut consequat. Mollit cillum laboris reprehenderit sint deserunt aliqua et amet exercitation.",
     hueA: 340,
@@ -21,7 +28,7 @@ const projects = [
     githubLink: "https://github.com/EmoWell",
   },
   {
-    title: "Project 2",
+    title: "Meditation app",
     description:
       "Sunt eu irure minim amet ullamco excepteur incididunt esse exercitation non occaecat esse fugiat cillum. Excepteur elit exercitation magna commodo nisi sint tempor pariatur amet est deserunt ullamco do. Exercitation eiusmod nostrud ipsum voluptate consectetur adipisicing dolor ea. Exercitation sunt magna pariatur anim exercitation cillum eu magna esse. Qui cupidatat id minim ut Lorem tempor non voluptate officia.",
     hueA: 20,
@@ -30,7 +37,7 @@ const projects = [
     githubLink: "https://github.com/yourusername/project2",
   },
   {
-    title: "Project 3",
+    title: "Extensive to-do list",
     description:
       "Ipsum sint elit amet duis velit et et commodo. Et et commodo incididunt consequat eu dolore nulla Lorem cillum esse. Do cupidatat id exercitation qui ea aliquip qui. Occaecat excepteur laborum ullamco id labore culpa exercitation nisi irure eu. Deserunt fugiat eu ullamco voluptate deserunt qui consectetur aliqua eiusmod tempor. Aliqua et nulla laboris commodo nisi ipsum id excepteur deserunt. Occaecat dolore qui ea sunt irure esse cupidatat officia quis quis esse nostrud proident.",
     hueA: 60,
@@ -39,17 +46,22 @@ const projects = [
     githubLink: "https://github.com/yourusername/project3",
   },
   {
-    title: "Project 4",
+    title: "Influencer Dashboard",
     description:
       "Enim non ea sint minim ullamco veniam adipisicing velit pariatur reprehenderit do. Id et nulla proident commodo incididunt duis magna tempor eiusmod eiusmod. Aliqua mollit id ad ut laboris eiusmod cupidatat do cillum aute commodo.",
     hueA: 80,
     hueB: 120,
-    images: [
-      "https://via.placeholder.com/150/FF0000/FFFFFF?text=Image1",
-      "https://via.placeholder.com/150/00FF00/FFFFFF?text=Image2",
-      "https://via.placeholder.com/150/0000FF/FFFFFF?text=Image3",
-    ],
+    images: [inf1, inf2, inf3, inf4],
     githubLink: "https://github.com/yourusername/project4",
+  },
+  {
+    title: "Hospital Management Application",
+    description:
+      "Officia nostrud laboris proident cillum esse eiusmod consequat ullamco ex sit ut reprehenderit ipsum elit. Qui in exercitation officia irure velit qui ut consequat. Mollit cillum laboris reprehenderit sint deserunt aliqua et amet exercitation.",
+    hueA: 340,
+    hueB: 10,
+    images: [hms1, hms2, hms3],
+    githubLink: "https://github.com/EmoWell",
   },
 ];
 
@@ -60,6 +72,7 @@ export default function AcademicProjects() {
       {projects.map((project, index) => (
         <ProjectCard
           key={index}
+          index={index}
           title={project.title}
           description={project.description}
           hueA={project.hueA}
