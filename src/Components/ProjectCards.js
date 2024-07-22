@@ -52,7 +52,7 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.5 }}
       variants={cardVariants}
     >
-      <div className="w-full md:w-2/4 relative">
+      <div className="w-full md:w-2/4 relative aspect-w-16 aspect-h-9">
         <AnimatePresence initial={false}>
           <motion.img
             key={images[currentImage]}
@@ -72,7 +72,7 @@ const ProjectCard = ({
           <h2 className="text-xl font-bold">{title}</h2>
           <p>{description}</p>
         </div>
-        <div className="mt-4 flex justify-center md:justify-start">
+        <div className="mt-4 flex justify-center">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
               View on GitHub
