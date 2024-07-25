@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black border-gray-700">
+    <nav className="bg-black border-gray-700 z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="#"

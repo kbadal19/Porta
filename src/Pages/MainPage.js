@@ -4,6 +4,7 @@ import Picture from "../Components/Picture";
 import { InfiniteMovingCards } from "../Components/CertificateCards";
 import AcademicProjects from "../Components/AcademicProjects";
 import Skills from "../Components/Skills";
+import Firefly from "../Components/Firefly";
 
 const items = [
   {
@@ -16,17 +17,17 @@ const items = [
     name: "Jane Smith",
     title: "Project Manager",
   },
-  // Add more items as needed
 ];
 
 export default function MainPage() {
   return (
     <div>
+      <Firefly />
       <TopNavbar />
       <Picture />
       <Skills />
       <AcademicProjects />
-      <InfiniteMovingCards items={items}/>
+      <InfiniteMovingCards items={items} />
     </div>
   );
 }

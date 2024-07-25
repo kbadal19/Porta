@@ -44,7 +44,7 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      className={`card-container w-5/6 bg-white rounded-md shadow-md mt-5 p-4 flex flex-col md:flex-row ${
+      className={`card-container w-5/6 bg-white rounded-md shadow-md mt-5 p-4 z-50 flex flex-col md:flex-row ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
       initial="offscreen"

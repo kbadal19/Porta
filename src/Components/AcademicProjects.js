@@ -67,7 +67,7 @@ const projects = [
 
 export default function AcademicProjects() {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col z-40">
       <h1 className="text-white mt-5">Academic Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard

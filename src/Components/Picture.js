@@ -85,8 +85,8 @@ export default function Picture() {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-4 rounded-lg text-gray-200">
-      <div className="flex-grow h-72 flex flex-col justify-center lg:mr-16 border-r-2 border-black lg:border-none">
+    <div className="flex flex-col lg:flex-row items-center z-200 justify-between p-4 rounded-lg text-gray-200">
+      <div className="flex-grow h-72 flex flex-col justify-center lg:mr-16 border-r-2 z-20 border-black lg:border-none">
         <span className="font-extrabold text-4xl sm:text-5xl lg:text-7xl">
           Hi, I am Badal Kumar,
         </span>
@@ -100,7 +100,7 @@ export default function Picture() {
       </div>
       <div className="cursor-pointer w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 flex items-center justify-center lg:mr-36 mt-8 lg:mt-0">
         <img
-          className="rounded-full shadow-2xl w-full h-full"
+          className="rounded-full shadow-2xl w-full h-full z-40"
           src={actualPic}
           alt="Profile"
         />

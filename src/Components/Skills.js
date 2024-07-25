@@ -55,7 +55,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center z-50">
       {skills.map((skill, index) => (
         <Tooltip
           key={index}
