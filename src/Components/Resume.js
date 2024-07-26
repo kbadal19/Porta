@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div className="container mx-auto p-6 w-3/5 bg-gray-100 dark:bg-zinc-900">
+    <div className="container mx-auto p-4 sm:p-6 w-full sm:w-3/5 bg-gray-100 dark:bg-zinc-900">
       <Header />
-      <div className="p-6 space-y-4 text-left">
+      <div className="p-4 sm:p-6 space-y-4 text-left">
         <Section title="Work Experience">
           <Experience
             company="Super Mentor Technologies"
@@ -94,9 +94,9 @@ export default function Resume() {
 
 function Header() {
   return (
-    <div className="text-left py-10">
-      <h1 className="text-3xl font-bold">Badal Kumar</h1>
-      <p className="text-xl">
+    <div className="text-left py-6 sm:py-10">
+      <h1 className="text-2xl sm:text-3xl font-bold">Badal Kumar</h1>
+      <p className="text-lg sm:text-xl">
         Bengaluru, IND | +91 9122027847 |{" "}
         <a href="mailto:k.badal19@gmail.com" className="underline">
           k.badal19@gmail.com
@@ -120,9 +120,9 @@ function Section({ title, children }) {
 function Experience({ company, period, position, achievements }) {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <strong>{company}</strong>
-        <span className="text-right">({period})</span>
+        <span className="text-left sm:text-right">({period})</span>
       </div>
       <em>{position}</em>
       <ul className="list-disc list-inside text-left">
@@ -137,13 +137,13 @@ function Experience({ company, period, position, achievements }) {
 function Education({ institution, degree, period, gpa, coursework }) {
   return (
     <div className="text-left">
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <div>
           <strong>{institution}</strong>
           <br />
           <em>{degree}</em>
         </div>
-        <em className="text-right">({period})</em>
+        <em className="text-left sm:text-right">({period})</em>
       </div>
       <em>{gpa}</em>
       <p>
@@ -154,20 +154,20 @@ function Education({ institution, degree, period, gpa, coursework }) {
 }
 
 function Project({ title, period, details }) {
-    return (
-      <div>
-        <div className="flex justify-between">
-          <strong>{title}</strong>
-          <span className="text-right">({period})</span>
-        </div>
-        <ul className="list-disc list-inside text-left mb-4">
-          {details.map((detail, index) => (
-            <li key={index}>{detail}</li>
-          ))}
-        </ul>
+  return (
+    <div>
+      <div className="flex flex-col sm:flex-row justify-between">
+        <strong>{title}</strong>
+        <span className="text-left sm:text-right">({period})</span>
       </div>
-    );
-  }
+      <ul className="list-disc list-inside text-left mb-4">
+        {details.map((detail, index) => (
+          <li key={index}>{detail}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 function Skills({ languages, frameworks, databases, others, softSkills }) {
   return (

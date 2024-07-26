@@ -87,7 +87,7 @@ const Skills = () => {
               />
               <motion.circle
                 ref={(el) => (circlesRef.current[index] = el)}
-                className="text-green-500"
+                className="text-cyan-600"
                 strokeWidth="6"
                 strokeDasharray={circumference}
                 strokeLinecap="round"

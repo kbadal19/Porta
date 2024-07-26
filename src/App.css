@@ -58,3 +58,22 @@
   height: 100%;
   object-fit: cover;
 }
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
