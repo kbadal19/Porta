@@ -5,6 +5,7 @@ import { InfiniteMovingCards } from "../Components/CertificateCards";
 import AcademicProjects from "../Components/AcademicProjects";
 import Skills from "../Components/Skills";
 import Firefly from "../Components/Firefly";
+import Contact from "../Components/Contact";
 
 const items = [
   {
@@ -28,6 +29,7 @@ export default function MainPage() {
       <Skills />
       <AcademicProjects />
       <InfiniteMovingCards items={items} />
+      <Contact />
     </div>
   );
 }
