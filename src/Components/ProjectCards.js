@@ -42,9 +42,11 @@ const ProjectCard = ({
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const isMedapp = title.toLowerCase().includes("meditation");
+
   return (
     <motion.div
-      className={`card-container w-5/6 bg-white rounded-md z-50 shadow-md mt-5 p-4 flex flex-col md:flex-row ${
+      className={`card-container w-5/6 bg-white rounded-md z-50 shadow-md mt-32 p-4 flex flex-col md:flex-row ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
       initial="offscreen"
@@ -58,7 +60,9 @@ const ProjectCard = ({
             key={images[currentImage]}
             src={images[currentImage]}
             alt={title}
-            className="w-full h-full object-cover rounded-md"
+            className={`w-full h-full ${
+              isMedapp ? "object-cover" : "object-contain"
+            } rounded-md`}
             variants={imageVariants}
             initial="enter"
             animate="center"

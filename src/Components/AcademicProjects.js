@@ -69,18 +69,18 @@ export default function AcademicProjects() {
   return (
     <div className="flex justify-center items-center flex-col">
       <h1 className="text-white mt-5 text-4xl font-bold">Academic Projects</h1>
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            index={index}
-            title={project.title}
-            description={project.description}
-            hueA={project.hueA}
-            hueB={project.hueB}
-            images={project.images}
-            githubLink={project.githubLink}
-          />
-        ))}
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={index}
+          index={index}
+          title={project.title}
+          description={project.description}
+          hueA={project.hueA}
+          hueB={project.hueB}
+          images={project.images}
+          githubLink={project.githubLink}
+        />
+      ))}
     </div>
   );
 }
