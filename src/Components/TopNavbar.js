@@ -150,7 +150,7 @@ export default function Navbar() {
                   <img
                     src={hacker}
                     alt="Hackerrank"
-                    className="w-14 h-7 object-cover -ml-2 -md-6"
+                    className="w-12 h-6 object-cover -ml-2 mt-1 z-50"
                   />
                 </motion.a>
               </Tooltip>
