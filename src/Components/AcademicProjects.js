@@ -34,7 +34,7 @@ const projects = [
     hueA: 20,
     hueB: 40,
     images: [medapp1, medapp2, medapp3],
-    githubLink: "https://github.com/yourusername/project2",
+    githubLink: "https://github.com/kbadal19/medapp",
   },
   {
     title: "Extensive to-do list",
@@ -43,7 +43,7 @@ const projects = [
     hueA: 60,
     hueB: 90,
     images: [todo1, todo2, todo3],
-    githubLink: "https://github.com/yourusername/project3",
+    githubLink: "https://github.com/kbadal19/Glorified-ToDo",
   },
   {
     title: "Influencer Dashboard",
@@ -52,7 +52,7 @@ const projects = [
     hueA: 80,
     hueB: 120,
     images: [inf1, inf2, inf3, inf4],
-    githubLink: "https://github.com/yourusername/project4",
+    githubLink: "https://github.com/yourusername/ReactTask",
   },
   {
     title: "Hospital Management Application",
@@ -61,7 +61,7 @@ const projects = [
     hueA: 340,
     hueB: 10,
     images: [hms1, hms2, hms3],
-    githubLink: "https://github.com/EmoWell",
+    githubLink: "https://github.com/hmsdb",
   },
 ];
 
