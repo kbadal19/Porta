@@ -20,8 +20,7 @@ import hms3 from "../Pictures/hms3.png";
 const projects = [
   {
     title: "Emowell - Depression Detection Chatbot",
-    description:
-      "Officia nostrud laboris proident cillum esse eiusmod consequat ullamco ex sit ut reprehenderit ipsum elit. Qui in exercitation officia irure velit qui ut consequat. Mollit cillum laboris reprehenderit sint deserunt aliqua et amet exercitation.",
+    description: "Elit excepteur adipisicing mollit nulla aute ex tempor anim occaecat mollit magna velit. Consectetur veniam labore est sint sit ipsum consequat ex in nostrud do ullamco cupidatat. Eiusmod anim quis deserunt pariatur. Ad consequat occaecat consequat labore nisi adipisicing aliqua magna proident quis elit. Est nostrud veniam sint voluptate quis tempor.",
     hueA: 340,
     hueB: 10,
     images: [emowell1, emowell2, emowell3],

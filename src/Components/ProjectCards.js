@@ -43,6 +43,7 @@ const ProjectCard = ({
   }, [images.length]);
 
   const isMedapp = title.toLowerCase().includes("meditation");
+  const isEmowell = title.toLowerCase().includes("emowell");
 
   return (
     <motion.div
@@ -74,14 +75,28 @@ const ProjectCard = ({
       <div className="w-full md:w-2/3 p-4 flex flex-col justify-between">
         <div>
           <h2 className="text-xl font-bold">{title}</h2>
-          <p>{description}</p>
+          <p
+            className="proj-desc"
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></p>
         </div>
-        <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex justify-center space-x-4">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
               View on GitHub
             </button>
           </a>
+          {isEmowell && (
+            <a
+              href="https://66b076611a567e8603e383e2--unrivaled-moonbeam-259772.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+                View Live Demo
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </motion.div>
