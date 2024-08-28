@@ -73,13 +73,18 @@ const ProjectCard = ({
         </AnimatePresence>
       </div>
       <div className="w-full md:w-2/3 p-4 flex flex-col justify-between">
-        <div>
-          <h2 className="text-xl font-bold">{title}</h2>
-          <p
-            className="proj-desc"
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></p>
-        </div>
+      <div>
+  <h2 className="text-xl font-bold mb-5">{title}</h2>
+  {Array.isArray(description) ? (
+    <ul className="proj-desc list-disc list-inside text-sm">
+      {description.map((point, index) => (
+        <li key={index}>{point}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>{description}</p>
+  )}
+</div>
         <div className="mt-4 flex justify-center space-x-4">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
