@@ -8,12 +8,12 @@ export default function Resume() {
         <Section title="Work Experience">
           <Experience
             company="Super Mentor Technologies"
-            period="03/2024 – present"
+            period="03/2024 – 06/2024"
             position="SDE Intern"
             achievements={[
-              "Enhanced algorithm efficiency by 80% through the implementation of advanced techniques.",
-              "Developed fully responsive User Interface design with React.js for a more intuitive experience.",
-              "Optimized APIs, resulting in exponential reduction in load time of up to 2000ms.",
+              "Developed a fully responsive and secure user interface using Next.js with server-side rendering.",
+              "Enhanced search efficiency by implementing vector search and Jmespath libraries with Redis.",
+              "Transformed the backend architecture from monolithic to microservices for improved scalability and performance.",
             ]}
           />
         </Section>
@@ -22,8 +22,8 @@ export default function Resume() {
           <Education
             institution="JSS Academy of Technical Education, Bengaluru"
             degree="Bachelor of Engineering (B.E.) in Computer Science"
-            period="Dec 2020 – Present"
-            gpa="8.25 CGPA"
+            period="12/2020 – 06/2024"
+            gpa="8.4 CGPA"
             coursework="Programming Fundamentals, Operating System, Data Structures and Applications, Design and Analysis of Algorithms, Object Oriented Concepts, Discrete Mathematics, Computer Networks, Automata Theory, System Software and Compiler Design, Computer Organization, Machine Learning Concepts, Web Technology and Applications, Big Data Analytics, Internet of Things"
           />
         </Section>
@@ -31,19 +31,20 @@ export default function Resume() {
         <Section title="Academic Projects">
           <Project
             title="Emowell – Depression Detection Chatbot using Machine Learning"
-            period="10/2023 - present"
+            period="10/2023 - 05/2024"
             details={[
               "Seamlessly melded React.js, Next.js, and Tailwind CSS to forge an immersive chatbot website.",
               "Engineered a secure Django backend with PostgreSQL, featuring Knox authentication for seamless login/signup, reducing login time by 50%.",
-              "Enhanced user well-being with advanced mental health assessments like PHQ-9 and BDI-2, bolstered by LSTM algorithms, resulting in a 25% increase in users taking steps towards managing their mental health.",
+              "Enhanced user well-being with advanced mental health assessments like PHQ-9 and BDI-2, bolstered by ensemble learning using a voting classifier algorithm, resulting in a 25% increase in users taking steps towards managing their mental health.",
             ]}
           />
           <Project
-            title="Weather Forecast application"
+            title="Influencer Dashboard"
             period="07/2023 - 08/2023"
             details={[
-              "Designed an interactive web application using React.js to provide real-time weather information using Fetch API that can store up to 10 cards simultaneously and display information of up to 5 days in advance.",
-              "This project demonstrates proficiency in React.js, API integration, and user interface design, showcasing the ability to create practical solutions.",
+              "Created a React.js and Spring Boot app to unify social media profiles into one dashboard with individual and combined statistics.",
+              "Implemented real-time data retrieval via web sockets and graphical data visualization.",
+              "Secured data with JWT authentication, server-side rendering, and SHA-256 encryption.",
             ]}
           />
           <Project
@@ -58,11 +59,11 @@ export default function Resume() {
 
         <Section title="Skills">
           <Skills
-            languages="Java, JavaScript (with jQuery), Python, C, HTML"
-            frameworks="React.js, Next.js, Django, Flask, Node.js, Tailwind CSS, SCSS"
+            languages="Java, JavaScript (with jQuery), Python, TypeScript, C, HTML"
+            frameworks="React.js, Next.js, Django, Flask, Node.js, Tailwind CSS, Spring Boot, Angular"
             databases="SQL, PostgreSQL, MongoDB"
-            others="Git, Linux/Unix"
-            softSkills="Leadership, Communication, Team work"
+            others="Git, Linux/Unix, Redis, RESTful APIs, Nginx, CI/CD pipelines"
+            softSkills="Leadership, Communication, Teamwork"
           />
         </Section>
 
@@ -72,7 +73,8 @@ export default function Resume() {
               "Associate Cloud Engineer - Google Cloud",
               "Operating System Fundamentals - edX",
               "SQL (Intermediate) - Hackerrank",
-              "DevOps Beginners to Advanced – Udemy",
+              "DevOps Beginners to Advanced - Udemy",
+              "React.js Developer - Hackerrank",
             ]}
           />
         </Section>
@@ -80,9 +82,9 @@ export default function Resume() {
         <Section title="Achievements">
           <Achievements
             achievements={[
-              "Lead a team of 4 to publish a research paper about “Machine Learning Algorithms used to predict mental health” in International Conference on Multidisciplinary Research and Innovation (ICMRI 2024).",
-              "Stood among top 3 teams out of 25 participating teams from 7 colleges in Inter-college hackathon.",
-              "Qualified level 2 of Flipkart Grid 5.5 in collaboration with 2 other team members.",
+              "Led a team of 4 to publish a research paper on 'Machine Learning Algorithms used to predict mental health' at the International Conference on Multidisciplinary Research and Innovation (ICMRI 2024).",
+              "Stood among the top 3 teams out of 25 participating teams from 7 colleges in an inter-college hackathon.",
+              "Qualified for level 2 of Flipkart Grid 5.5 in collaboration with 2 other team members.",
               "Raised 12 issues in Hacktoberfest 2023 and contributed 4 times.",
             ]}
           />
@@ -100,6 +102,19 @@ function Header() {
         Bengaluru, IND | +91 9122027847 |{" "}
         <a href="mailto:k.badal19@gmail.com" className="underline">
           k.badal19@gmail.com
+        </a>
+      </p>
+      <p className="text-lg sm:text-xl">
+        <a href="https://www.linkedin.com/in/badal-kumar-3b1173277/" className="underline">
+          LinkedIn
+        </a>{" "}
+        |{" "}
+        <a href="https://github.com/kbadal19" className="underline">
+          GitHub
+        </a>{" "}
+        |{" "}
+        <a href="https://porta-taupe.vercel.app/" className="underline">
+          Portfolio Website
         </a>
       </p>
     </div>
