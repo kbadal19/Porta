@@ -3,9 +3,6 @@ import ProjectCard from "../Components/ProjectCards";
 import emowell1 from "../Pictures/emowell1.jpg";
 import emowell2 from "../Pictures/emowell2.jpg";
 import emowell3 from "../Pictures/emowell3.jpg";
-import medapp1 from "../Pictures/medapp1.jpg";
-import medapp2 from "../Pictures/medapp2.jpg";
-import medapp3 from "../Pictures/medapp3.jpg";
 import todo1 from "../Pictures/todo1.png";
 import todo2 from "../Pictures/todo2.png";
 import todo3 from "../Pictures/todo3.png";
@@ -16,7 +13,11 @@ import inf4 from "../Pictures/inf4.png";
 import hms1 from "../Pictures/hms1.png";
 import hms2 from "../Pictures/hms2.png";
 import hms3 from "../Pictures/hms3.png";
-
+import real1 from "../Pictures/real1.png";
+import real2 from "../Pictures/real2.png";
+import real3 from "../Pictures/real3.png";
+import real4 from "../Pictures/real4.png";
+import real5 from "../Pictures/real5.png";
 const projects = [
   {
     title: "Emowell - Depression Detection Chatbot",
@@ -34,18 +35,20 @@ const projects = [
     githubLink: "https://github.com/kbadal19/Final-Year-Project",
   },
   {
-    title: "Meditation app",
+    title: "Real Estate Web Application",
     description: [
-      "Developed using Kotlin language.",
-      "Login and chat history data are stored in Firebase Realtime Database.",
-      "UI is built with basic androidx components, material design, and images are handled with the Picasso library.",
-      "Some statistical dashboard data is stored locally using Shared Preferences.",
-      "Features four main tabs (Android fragments): Main Dashboard, Learning (Video content and reading topics), Forum (free typing tool for everyone), and About (team introduction).",
+      "Built with React and TypeScript, featuring smooth animations via Framer Motion.",
+      "Static property data for now; backend integration is in progress.",
+      "Responsive design with Tailwind CSS, ensuring usability across all devices.",
+      "Includes four key sections: Home, Properties, Contact, and About Us.",
+      "Interactive UI with animated transitions and hover effects.",
+      "Focused on clean, modern, and mobile-first design for a real estate experience.",
     ],
     hueA: 20,
     hueB: 40,
-    images: [medapp1, medapp2, medapp3],
-    githubLink: "https://github.com/kbadal19/medapp",
+    images: [real1, real2, real3, real4, real5],
+    githubLink: "https://github.com/kbadal19/react-home",
+    realStateLink:"https://react-home-sage.vercel.app/",
   },
   {
     title: "Extensive to-do list",

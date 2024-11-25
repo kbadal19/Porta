@@ -7,7 +7,7 @@ export default function ResumePage() {
     <div className="relative">
       <Tooltip title="Download Resume">
         <a
-          href="/resume101.2.pdf"
+          href="/resume101.7.pdf"
           download
           className="absolute top-4 right-4 bg-gray-400 text-white px-4 py-2 rounded-full flex items-center"
         >

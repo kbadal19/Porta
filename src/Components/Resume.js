@@ -8,12 +8,13 @@ export default function Resume() {
         <Section title="Work Experience">
           <Experience
             company="Super Mentor Technologies"
-            period="03/2024 – 06/2024"
+            period="12/2023 – 06/2024"
             position="SDE Intern"
             achievements={[
-              "Developed a fully responsive and secure user interface using Next.js with server-side rendering.",
-              "Enhanced search efficiency by implementing vector search and Jmespath libraries with Redis.",
-              "Transformed the backend architecture from monolithic to microservices for improved scalability and performance.",
+              "Created a fully responsive, secure user interface using React.js along with server-side rendering using Spring framework.",
+              "Deployed and maintained various web applications using GitLab and FluxCD.",
+              "Converted backend from monolithic to microservices, improving scalability and reducing downtime by 40%.",
+              "Re-engineered the PostgreSQL database schema, optimizing data storage and improving overall system efficiency.",
             ]}
           />
         </Section>
@@ -30,39 +31,40 @@ export default function Resume() {
 
         <Section title="Academic Projects">
           <Project
-            title="Emowell – Depression Detection Chatbot using Machine Learning"
-            period="10/2023 - 05/2024"
+            title="Code Automation Bot"
+            period="10/2024 - Present"
             details={[
-              "Seamlessly melded React.js, Next.js, and Tailwind CSS to forge an immersive chatbot website.",
+              "Developing an intelligent bot that generates code in multiple programming languages based on user prompts, creating language-specific file structures.",
+              "Integrated components and libraries as specified by users, enabling seamless setup for projects using various front-end and back-end frameworks like React, Django, and Node.js.",
+              "Implemented support for a wide range of frameworks and technologies, reducing development setup time by over 70%.",
+            ]}
+          />
+          <Project
+            title="Emowell – Depression Detection Chatbot using Machine Learning"
+            period="10/2023 – 05/2024"
+            details={[
+              "Crafted a visually appealing user interface with Tailwind CSS, improving accessibility and user experience metrics, which led to a 35% increase in user retention over a three-month period.",
               "Engineered a secure Django backend with PostgreSQL, featuring Knox authentication for seamless login/signup, reducing login time by 50%.",
-              "Enhanced user well-being with advanced mental health assessments like PHQ-9 and BDI-2, bolstered by ensemble learning using a voting classifier algorithm, resulting in a 25% increase in users taking steps towards managing their mental health.",
+              "Enhanced user well-being with advanced mental health assessments like PHQ-9 and BDI-2, bolstered by ensemble learning using voting classifier algorithm, resulting in an accuracy of 94.6%.",
             ]}
           />
           <Project
             title="Influencer Dashboard"
-            period="07/2023 - 08/2023"
+            period="07/2023 - 09/2023"
             details={[
-              "Created a React.js and Spring Boot app to unify social media profiles into one dashboard with individual and combined statistics.",
-              "Implemented real-time data retrieval via web sockets and graphical data visualization.",
+              "Built a unified social media dashboard with React.js, Spring Boot, and MongoDB, providing a 360-degree view of statistics collected via various social media platforms like YouTube and Instagram.",
+              "Implemented real-time data retrieval via web sockets and graphical data visualization using chart.js.",
               "Secured data with JWT authentication, server-side rendering, and SHA-256 encryption.",
-            ]}
-          />
-          <Project
-            title="Hospital Management System"
-            period="12/2022 - 02/2023"
-            details={[
-              "Successfully partnered with a team member to create a user-friendly hospital management website using Flask, HTML, and CSS.",
-              "Effectively managed a MySQL database housing extensive data for 20 doctors and over 450 patients, implementing various complex queries to facilitate seamless information retrieval.",
             ]}
           />
         </Section>
 
         <Section title="Skills">
           <Skills
-            languages="Java, JavaScript (with jQuery), Python, TypeScript, C, HTML"
-            frameworks="React.js, Next.js, Django, Flask, Node.js, Tailwind CSS, Spring Boot, Angular"
-            databases="SQL, PostgreSQL, MongoDB"
-            others="Git, Linux/Unix, Redis, RESTful APIs, Nginx, CI/CD pipelines"
+            languages="Java, JavaScript (with jQuery), Python, Typescript, C, HTML"
+            frameworks="React.js, Next.js, Vue.js, Django, Flask, Node.js, Tailwind CSS, Spring Boot, Angular"
+            databases="MySQL, PostgreSQL, MongoDB"
+            others="Git, Linux/Unix, Redis, RESTful APIs, Nginx, CI/CD pipelines, Docker, GitLab, Flux"
             softSkills="Leadership, Communication, Teamwork"
           />
         </Section>
@@ -70,11 +72,11 @@ export default function Resume() {
         <Section title="Certifications">
           <Certifications
             certifications={[
-              "Associate Cloud Engineer - Google Cloud",
-              "Operating System Fundamentals - edX",
-              "SQL (Intermediate) - Hackerrank",
-              "DevOps Beginners to Advanced - Udemy",
-              "React.js Developer - Hackerrank",
+              "Google Cloud: Associate Cloud Engineer",
+              "edX: Operating System Fundamentals",
+              "IBM: SPSS V3 Modeler",
+              "Udemy: DevOps Beginner to Advanced",
+              "Hackerrank: React.js Developer",
             ]}
           />
         </Section>
@@ -82,9 +84,9 @@ export default function Resume() {
         <Section title="Achievements">
           <Achievements
             achievements={[
-              "Led a team of 4 to publish a research paper on 'Machine Learning Algorithms used to predict mental health' at the International Conference on Multidisciplinary Research and Innovation (ICMRI 2024).",
-              "Stood among the top 3 teams out of 25 participating teams from 7 colleges in an inter-college hackathon.",
-              "Qualified for level 2 of Flipkart Grid 5.5 in collaboration with 2 other team members.",
+              "Lead a team of 4 to publish a research paper about 'Machine Learning Algorithms used to predict mental health' in International Conference on Multidisciplinary Research and Innovation (ICMRI 2024).",
+              "Stood among top 3 teams out of 25 participating teams from 7 colleges in Inter-college hackathon.",
+              "Qualified level 2 of Flipkart Grid 5.5 in collaboration with 2 other team members.",
               "Raised 12 issues in Hacktoberfest 2023 and contributed 4 times.",
             ]}
           />
@@ -105,7 +107,10 @@ function Header() {
         </a>
       </p>
       <p className="text-lg sm:text-xl">
-        <a href="https://www.linkedin.com/in/badal-kumar-3b1173277/" className="underline">
+        <a
+          href="https://www.linkedin.com/in/badal-kumar-3b1173277/"
+          className="underline"
+        >
           LinkedIn
         </a>{" "}
         |{" "}
